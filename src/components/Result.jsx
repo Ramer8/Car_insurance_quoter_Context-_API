@@ -34,7 +34,7 @@ const Result = () => {
             </p>
 
             <p className="my-2 text-2xl mb-1">
-                <span className="font-bold">Result:  </span>
+                <span className="font-bold">Total quotation:  </span>
                 <span className="font-bold text-gray-500">{result === 0 ? null : result}</span>
             </p>
         </div>

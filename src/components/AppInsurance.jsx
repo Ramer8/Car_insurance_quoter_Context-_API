@@ -9,14 +9,17 @@ const AppInsurance = () => {
     return (
         <>
             <header className="my-10">
-                <h1 className="text-4xl font-black text-white bg-clip-text text-center
+                <h1 className="text-4xl font-black text-white bg-clip-text  text-center
                 ">
                     Car Insurance Quoter
                 </h1>
             </header>
             <main className="bg-gray-200 md:2/3 lg:w-1/2 mx-auto shadow rounded-lg p-10  pt-4">
                 <Form />
-                {loading ? <Spinner /> : <Result />}
+                {loading ? <Spinner /> :
+                    result ? <Result /> :
+                        null
+                }
             </main>
         </>
 
